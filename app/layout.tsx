@@ -1,11 +1,10 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ConvexClientProvider } from "./ConvexClientProvider";
-import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { AppSidebar } from "@/components/app-sidebar";
 import { Toaster } from "@/components/ui/sonner";
+import { BottomNav } from "@/components/bottom-nav";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,6 +20,9 @@ export const metadata: Metadata = {
   title: "TripSync",
   description: "Collaborative trip planning web app",
   manifest: "/manifest.json",
+};
+
+export const viewport: Viewport = {
   themeColor: "#000000",
 };
 
@@ -36,14 +38,13 @@ export default function RootLayout({
       >
         <ConvexClientProvider>
           <TooltipProvider>
-            <SidebarProvider>
-              <AppSidebar />
-              <main className="w-full h-screen overflow-x-hidden p-6">
-                <SidebarTrigger />
+            <div className="flex flex-col min-h-screen">
+              <main className="flex-1 w-full overflow-x-hidden p-4 pb-24 md:p-6 md:pb-24 max-w-3xl mx-auto">
                 {children}
               </main>
-              <Toaster />
-            </SidebarProvider>
+              <BottomNav />
+            </div>
+            <Toaster />
           </TooltipProvider>
         </ConvexClientProvider>
       </body>

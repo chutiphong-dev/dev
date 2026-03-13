@@ -43,13 +43,13 @@ export default function TripDashboard() {
       <Tabs defaultValue="overview" className="w-full">
         <div className="w-full overflow-x-auto pb-2 scrollbar-hide">
           <TabsList className="inline-flex h-auto w-max min-w-full justify-start md:grid md:grid-cols-7 md:w-full md:max-w-5xl md:mb-12">
-            <TabsTrigger value="overview">Overview</TabsTrigger>
-            <TabsTrigger value="members">Members</TabsTrigger>
-            <TabsTrigger value="accommodations">Rooms</TabsTrigger>
-            <TabsTrigger value="transports">Transports</TabsTrigger>
-            <TabsTrigger value="expenses">Expenses</TabsTrigger>
-            <TabsTrigger value="financials" className="font-semibold text-primary">Financials</TabsTrigger>
-            <TabsTrigger value="itinerary" className="font-semibold text-blue-500">My Itinerary</TabsTrigger>
+            <TabsTrigger value="overview">The Vibe 🏖️</TabsTrigger>
+            <TabsTrigger value="members">The Squad 👾</TabsTrigger>
+            <TabsTrigger value="accommodations">Crash Pads 🛌</TabsTrigger>
+            <TabsTrigger value="transports">Wheels & Wings 🚀</TabsTrigger>
+            <TabsTrigger value="expenses">Who Owes What 💸</TabsTrigger>
+            <TabsTrigger value="financials" className="font-semibold text-primary">The Damage 🧾</TabsTrigger>
+            <TabsTrigger value="itinerary" className="font-semibold text-blue-500">My VIP Pass 🎟️</TabsTrigger>
           </TabsList>
         </div>
 

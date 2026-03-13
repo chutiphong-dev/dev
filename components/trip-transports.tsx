@@ -85,7 +85,9 @@ export function TripTransports({ tripId }: { tripId: Id<"trips"> }) {
               </Button>
            </div>
          ))}
-         {transports.length === 0 && <p className="text-muted-foreground">No transports added.</p>}
+         {transports.length === 0 ? (
+         <p className="text-muted-foreground text-center p-8 bg-muted rounded-xl">No rides yet. Better pack comfortable walking shoes! 🥾</p>
+      ) : null}
       </div>
     </div>
   );

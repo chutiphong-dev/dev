@@ -19,7 +19,7 @@ export function MyItinerary({ tripId, userId }: { tripId: Id<"trips">, userId: s
         {/* Room Card */}
         <Card>
           <CardHeader className="flex flex-row items-center justify-between pb-2">
-            <CardTitle className="text-sm font-medium">Accommodation</CardTitle>
+            <CardTitle className="text-sm font-medium">Where you&apos;re crashing</CardTitle>
             <MapPin className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
@@ -39,7 +39,7 @@ export function MyItinerary({ tripId, userId }: { tripId: Id<"trips">, userId: s
         {/* Transport Card */}
         <Card>
            <CardHeader className="flex flex-row items-center justify-between pb-2">
-            <CardTitle className="text-sm font-medium">Transport</CardTitle>
+            <CardTitle className="text-sm font-medium">Your Chariot Awaits</CardTitle>
             <Car className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
@@ -59,7 +59,7 @@ export function MyItinerary({ tripId, userId }: { tripId: Id<"trips">, userId: s
         {/* Total Owed Card */}
         <Card className="bg-primary text-primary-foreground">
            <CardHeader className="flex flex-row items-center justify-between pb-2">
-             <CardTitle className="text-sm font-medium">Total Balance Due</CardTitle>
+             <CardTitle className="text-sm font-medium">Damage Done</CardTitle>
              <DollarSign className="h-4 w-4" />
            </CardHeader>
            <CardContent>

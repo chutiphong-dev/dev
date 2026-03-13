@@ -31,7 +31,11 @@ export function RoomAssignmentGrid({ tripId, accId }: RoomAssignmentGridProps) {
   }
 
   if (rooms.length === 0) {
-    return <p className="text-muted-foreground text-sm">No rooms found for this accommodation.</p>;
+    return (
+        <div className="text-center p-8 bg-muted rounded-xl">
+          <p className="text-muted-foreground">No rooms added yet. Are we sleeping on the streets? 🛌</p>
+        </div>
+    );
   }
 
   return (
